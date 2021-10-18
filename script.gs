@@ -21,7 +21,7 @@ function updateSummarySheet() {
   var checklistSheet = spreadsheet.getSheetByName("Generic Hazard Checklist");
 
   var lastRow = checklistSheet.getDataRange().getLastRow();
-  var checklistData = checklistSheet.getSheetValues(11, 1, lastRow - 12, 2);
+  var checklistData = checklistSheet.getSheetValues(11, 1, lastRow - 10, 2);
   
   var sheetNumberRegex = /^[0-9]+$/;
   var sheetNumber = 1;
